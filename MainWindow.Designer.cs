@@ -43,6 +43,8 @@
             this.bgWorker = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatus_Progress = new System.Windows.Forms.ToolStripProgressBar();
             this.tsStatusBar_Status = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusBar_Status2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -70,8 +72,6 @@
             this.tsTitleOrg = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripSeparator();
             this.tsReloadHTML = new System.Windows.Forms.ToolStripButton();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsMainToolbar.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.Workspace.Panel1.SuspendLayout();
@@ -197,6 +197,22 @@
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.IsLink = true;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(103, 17);
+            this.toolStripStatusLabel1.Text = "Pinoy Touch Tech";
+            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Enabled = false;
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(10, 17);
+            this.toolStripStatusLabel2.Text = "|";
+            this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // tsStatus_Progress
             // 
             this.tsStatus_Progress.Name = "tsStatus_Progress";
@@ -255,7 +271,7 @@
             this.groupBox2.Controls.Add(this.rbView_HTML);
             this.groupBox2.Location = new System.Drawing.Point(669, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(103, 94);
+            this.groupBox2.Size = new System.Drawing.Size(103, 102);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Result View";
@@ -301,7 +317,7 @@
             this.groupBox1.Controls.Add(this.rbNodeSel_SingleNode);
             this.groupBox1.Location = new System.Drawing.Point(542, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(121, 68);
+            this.groupBox1.Size = new System.Drawing.Size(121, 102);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Node Selection Type";
@@ -498,22 +514,6 @@
             this.tsReloadHTML.Name = "tsReloadHTML";
             this.tsReloadHTML.Size = new System.Drawing.Size(159, 22);
             this.tsReloadHTML.Text = "Load to HTMLDocument";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.IsLink = true;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(103, 17);
-            this.toolStripStatusLabel1.Text = "Pinoy Touch Tech";
-            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Enabled = false;
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(10, 17);
-            this.toolStripStatusLabel2.Text = "|";
-            this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // MainWindow
             // 
